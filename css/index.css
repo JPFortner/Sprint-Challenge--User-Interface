@@ -66,9 +66,58 @@ p {
     line-height: 1.4;
 }
 
-.container {
+nav, .container {
     width: 800px;
     margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+nav button {
+    height: auto;
+    width: 10%;
+    background-color: white;
+    border: 5px inset darkgray;
+    border-radius: 0em 1em;
+}
+
+nav button a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+a:hover {
+    color: #d53c0f;
+}
+
+.imgJumbo, .imgJumboAbout {
+    margin: 1em 0em;
+}
+
+.contentMainWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentMainWrap section {
+    width: 45%;
+    margin: 1em;
+    border-bottom: 1px dashed black;
+}
+
+.contentMainWrap section img, .contentMainWrap section button {
+    margin-bottom: 1em;
+}
+
+.divLine {
+    border-bottom: 1px dashed black;
 }
 
 .top-content {
@@ -83,6 +132,10 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.container section {
+    margin: 1em;
 }
 
 .middle-content {
@@ -110,7 +163,40 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px white dashed;
 }
+
+#teal{
+    background: teal;
+}
+#gold {
+    background: gold;
+}
+#cadetblue {
+    background: cadetblue;
+}
+#coral {
+    background: coral;
+}
+#crimson {
+    background: crimson;
+}
+#forestgreen {
+    background: forestgreen;
+}
+#darkorchid {
+    background: darkorchid;
+}
+#hotpink {
+    background: hotpink;
+}
+#indigo {
+    background: indigo;
+}
+#dodgerblue {
+    background: dodgerblue;
+}
+
 
 .bottom-content {
     display: flex;
@@ -144,3 +230,26 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* At this point, I cannot wait for LESS */
+/* 
+@media screen only (min-width: 360px) {
+    .contentMainWrap {
+        flex-direction: column;
+    }
+    .contentMainWrap section, .contentMainWrap h3, .contentMainWrap img {
+        width: 100%;
+    }
+    .contentMainWrap button {
+        height: 3em;
+        width: 25%;
+        border: 5px solid black;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .contentMainWrap button:hover {
+        color: white;
+        background-color: black;
+    }
+} */
